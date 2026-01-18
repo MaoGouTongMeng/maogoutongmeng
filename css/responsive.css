@@ -1,0 +1,36 @@
+/* ========== 响应式适配(移动端) ========== */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .cats-grid, .activities-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        padding: 25px;
+    }
+
+    .modal-close {
+        top: 20px;
+        right: 25px;
+        font-size: 30px;
+    }
+}

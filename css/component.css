@@ -1,0 +1,219 @@
+/* 猫咪卡片 */
+.cat-card {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.cat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cat-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    cursor: zoom-in; /* 放大透镜图标提示可点击 */
+}
+
+.cat-info {
+    padding: 25px;
+}
+
+.cat-info h3 {
+    font-size: 20px;
+    color: var(--primary);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cat-info h3 i {
+    font-size: 18px;
+}
+
+.cat-info .cat-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+.cat-info .cat-detail span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cat-info .cat-detail i {
+    color: var(--primary);
+    font-size: 12px;
+}
+
+/* 活动卡片 */
+.activity-card {
+    background-color: var(--primary-light);
+    border-radius: var(--radius);
+    padding: 25px;
+    border-left: 4px solid var(--primary);
+    transition: var(--transition);
+}
+
+.activity-card:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow);
+}
+
+.activity-card h3 {
+    font-size: 18px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.activity-card p {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.activity-card .activity-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-light);
+    font-size: 12px;
+}
+
+.activity-card .activity-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* 大图预览模态框 */
+.img-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+.img-modal.active {
+    display: flex;
+}
+
+.modal-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    color: var(--primary);
+}
+
+.modal-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+    cursor: grab;
+}
+
+.modal-img:active {
+    cursor: grabbing;
+}
+
+/* 按钮样式 */
+.hero-btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(246, 152, 115, 0.3);
+    transition: var(--transition);
+}
+
+.hero-btn:hover {
+    background-color: #e88865;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(246, 152, 115, 0.4);
+}
+
+/* 更多猫咪按钮样式 */
+.more-cats-btn-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.more-cats-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius);
+    font-size: 16px;
+    font-weight: 500;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.more-cats-btn:hover {
+    background-color: #e88863;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.more-cats-btn i {
+    margin-left: 8px;
+}
+
+/* 详细信息按钮样式 */
+.more-info-btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.more-info-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius);
+    font-size: 16px;
+    font-weight: 500;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.more-info-btn:hover {
+    background-color: #e88863;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.more-info-btn i {
+    margin-left: 8px;
+}

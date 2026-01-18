@@ -1,0 +1,71 @@
+/* ========== 全局基础样式 ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", "PingFang SC", sans-serif;
+}
+
+:root {
+    /* 主题色定义，方便统一修改 */
+    --primary: #f69873; /* 浅棕主色 */
+    --primary-light: #ffede6; /* 浅棕背景 */
+    --text-dark: #333333; /* 主要文字 */
+    --text-gray: #666666; /* 次要文字 */
+    --text-light: #999999; /* 辅助文字 */
+    --white: #ffffff; /* 白色 */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 通用阴影 */
+    --radius: 12px; /* 通用圆角 */
+    --transition: all 0.3s ease; /* 通用过渡动画 */
+}
+
+body {
+    background-color: #faf7f2;
+    color: var(--text-dark);
+    line-height: 1.6;
+    scroll-behavior: smooth; /* 平滑滚动 */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+/* 通用容器：限制宽度+居中 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 通用模块标题 */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 3px;
+}
+
+.section-title p {
+    color: var(--text-gray);
+    font-size: 16px;
+}
